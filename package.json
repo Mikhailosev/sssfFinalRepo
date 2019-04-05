@@ -1,0 +1,22 @@
+{
+  "name": "sssf",
+  "version": "1.0.0",
+  "description": "uni proj",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mikhail Losev",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "crypto": "^1.0.1",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "fs": "0.0.1-security",
+    "helmet": "^3.16.0",
+    "mongoose": "^5.3.4",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.1"
+  }
+}

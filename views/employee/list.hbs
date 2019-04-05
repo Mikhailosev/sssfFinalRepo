@@ -1,0 +1,30 @@
+<h3><a href="/employee" class="btn btn-secondary"><i class="fa fa-plus"></i>Create New</a></h3>
+<table class="table table-striped">
+    <thread>
+        <tr>
+            <th>Photo</th>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>Mobile</th>
+            <th>City</th>
+            <th>Delete/Edit</th>
+        </tr>
+    </thread>
+    <tbody>
+        {{#each list}}
+        <tr>
+            <td><img src="/upload/{{this.img}}-small.png"></td>
+            <td>{{this.fullName}}</td>
+            <td>{{this.email}}</td>
+            <td>{{this.mobile}}</td>
+            <td>{{this.city}}</td>
+            <td>
+                <a href="/employee/{{this._id}}"><i class="far fa-edit fa-lg" aria-hidden="true"></i></a>
+                <a href="/employee/delete/{{this._id}}"
+                    onclick="return confirm('Are you sure you want to delete this record ?')"><i
+                        class="fa fa-trash fa-lg" aria-hidden="true"></i></a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
