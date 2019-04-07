@@ -63,6 +63,9 @@ app.use(session({
   resave: true
 
 }))
+app.get('/', (req,res)=>{
+  res.redirect('/employee/index')
+})
 app.post('/createUpload', multer.single('image'), (req, res) => {
   let id = uuid()
   console.log('upload', req.file)
